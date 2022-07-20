@@ -44,3 +44,13 @@ class Custom_exception extends Exception
 		}
 	}
 }
+/*
+output
+Avenger Name	Avenger Position	Power level
+Ironman	1	8000.0
+Thor	3	15000.5
+Hulk	4	6000.0
+Captain America	2	5000.0
+exception_handling.Custom_exception: Mortal Avenger
+	at exception_handling.Custom_exception.main(Custom_exception.java:36)
+/*
