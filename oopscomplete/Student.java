@@ -73,4 +73,10 @@ class Result extends Student
 	}	
 }
 
-
+/* 
+Output:
+lohith
+20221999
+269
+First class
+/*
