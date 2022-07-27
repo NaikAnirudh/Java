@@ -1,4 +1,4 @@
-package com.java.assignment.Q2;
+package com.java.assignment.q2;
 
 /**
  * CLass "Student" stores the Name, Program, Address, Year and Fee details of
@@ -6,8 +6,9 @@ package com.java.assignment.Q2;
  */
 public class Student extends Person {
 
-	String program;
-	int year;
+	private String program;
+	private int year;
+	private double fee;
 
 	public Student(String name, String program, String address, int year, double fee) {
 		super(name, address);
@@ -16,7 +17,6 @@ public class Student extends Person {
 		this.fee = fee;
 	}
 
-	double fee;
 
 	public String getProgram() {
 		return program;
@@ -45,16 +45,6 @@ public class Student extends Person {
 	@Override
 	public String toString() {
 		return "Student :Name= " + name + ", Program= " + program + ", Year= " + year + ", Fee= " + fee + "Rupee";
-	}
-
-	/**
-	 * Using the main method for passing the Student and Staff details
-	 */
-	public static void main(String[] args) {
-		Student std_details = new Student("Mahesh", "Java Full Stack", "Bengaluru", 2022, 25000);
-		Staff staff_details = new Staff("Unacademy", "bang", "Shidhar", 60000.00);
-		System.out.println("\n"+std_details+ "\n");
-		System.out.println(staff_details);
 	}
 
 }

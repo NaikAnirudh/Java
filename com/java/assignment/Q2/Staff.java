@@ -1,12 +1,12 @@
-package com.java.assignment.Q2;
+package com.java.assignment.q2;
 
 /**
  * The class "Staff" Stores the Name, Address and salary details of the staff.
  */
 public class Staff extends Person {
 
-	String school;
-	double pay;
+	private String school;
+	private double pay;
 
 	public Staff(String school, String address, String name, double pay) {
 		super(name, address);

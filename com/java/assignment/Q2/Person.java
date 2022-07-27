@@ -1,13 +1,13 @@
-package com.java.assignment.Q2;
+package com.java.assignment.q2;
 
-//The class "Person" is appointed as Super Class for the Class "Staff" and "Student".  
 /**
+ * The class "Person" is appointed as Super Class for the Class "Staff" and "Student".  
  * Stores the Name and Address of the person
  */
 public class Person {
 
-	String name;
-	String address;
+	protected String name;
+	private String address;
 
 	public Person(String name, String address) {
 		this.name = name;
