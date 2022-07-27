@@ -12,8 +12,7 @@ public class Driver {
 
 	public static void main(String[] args) {
 		Scanner sc = new Scanner(System.in);
-		System.out.println("Enter the number to run the program");
-		System.out.println();
+		System.out.println("Enter the number to run the program" + "\n");
 		System.out.println("Enter 1 for School details question ");
 		System.out.println("Enter 2 for Discount System question");
 		// Enter number to run the program
