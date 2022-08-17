@@ -50,8 +50,67 @@ public class Conversiontype3 {
 	      String str3 = sb.toString();
 	      System.out.println("String object: "+str3);
 		
+		System.out.println("-----Input Stream to String------");
+		 Scanner s = new Scanner(System.in);
+	        System.out.println("Enter the file path: ");
+	        String filename = s.nextLine();
+	        
+	        File file = new File(filename);
+	        try {
+	            
+	            InputStream is = new FileInputStream(file);	            
+	            InputStreamReader isr = new InputStreamReader(is);	            	          
+				char charArray[] = new char[(int) file.length()];          	         
+	            isr.read(charArray);	            
+	            String contents = new String(charArray);
+	            System.out.println(contents);
+	        }
+	        catch (IOException e) {
+	            System.out.println(e);
+	        }
+		
 		
 		
 		
 }
 }
+
+/*
+ * OUTPUT:
+-----ASCII to String-----
+i
+b
+8
+A
+P
+-----Writer to String-----
+Appended String:Anirudh Naik
+
+-----StackTrace to String-----
+java.lang.ArithmeticException: / by zero
+	at com.java.training.conversions.Conversiontype3.main(Conversiontype3.java:36)
+
+-----String to Array List-----
+56
+87
+35
+45
+62
+15
+87
+-----String Buffer to String-----
+String object: Josh Softwares
+
+-----Input Stream to String------
+Enter the file path: 
+D:\files\g2.txt
+Anirudh 
+Lohith
+Jeevan
+Gireesh
+*/
+
+
+
+
+
